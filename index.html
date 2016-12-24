@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Practice Page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/ericmeyer.css">
+		<link rel="stylesheet" href="css/style.css">
+		<style>
+
+
+
+		</style>
+	</head>
+	<body>
+
+		<div id="header">
+				<h1>Spark</h1>
+
+		<div id="navIcon-box">
+			<svg id="navIcon" x="0px" y="0px" viewbox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+			<g><path d="M10,129.6h980v148.1H10V129.6z"/><path d="M10,425.9h980v148.1H10V425.9L10,425.9z"/><path d="M10,722.2h980v148.1H10V722.2z"/></g>
+			</svg>
+		</div>
+
+		</div>
+
+		<div class="empty"></div>
+
+		<div id="navigation-div">
+			<div id="close-box">
+				<svg id="close-btn" x="0px" y="0px" viewbox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+<g><path d="M981.1,797.3C981.1,797.3,981.1,797.3,981.1,797.3L683.8,500L981,202.7c0,0,0,0,0,0c3.2-3.2,5.5-6.9,7-10.9c4.1-10.9,1.7-23.6-7-32.4L840.6,18.9c-8.8-8.8-21.5-11.1-32.4-7c-4,1.5-7.7,3.8-10.9,7c0,0,0,0,0,0L500,316.2L202.7,18.9c0,0,0,0,0,0c-3.2-3.2-6.9-5.5-10.9-7c-10.9-4.1-23.6-1.7-32.4,7L18.9,159.4c-8.8,8.8-11.1,21.5-7,32.4c1.5,4,3.8,7.7,7,10.9c0,0,0,0,0,0L316.2,500L18.9,797.3c0,0,0,0,0,0c-3.2,3.2-5.5,6.9-7,10.9c-4.1,10.9-1.7,23.6,7,32.4l140.4,140.4c8.8,8.8,21.5,11.1,32.4,7c4-1.5,7.7-3.8,10.9-7c0,0,0,0,0,0L500,683.7l297.3,297.3c0,0,0,0,0,0c3.2,3.2,6.9,5.5,10.9,7c10.9,4.1,23.6,1.7,32.4-7L981,840.6c8.8-8.8,11.1-21.5,7-32.4C986.6,804.3,984.3,800.5,981.1,797.3z"/></g>
+</svg>
+			</div>
+			<div id="navigation">
+				<ul>
+					<li>
+						<a>Home</a>
+					</li>
+					<li>
+						<a>About</a>
+					</li>
+					<li>
+						<a>Portfolio</a>
+					</li>
+					<li>
+						<a>Contact</a>
+					</li>
+				</ul>
+			</div>
+	 </div>
+
+		<div class="box1"></div>
+		<div class="box1"></div>
+		<div class="box1"></div>
+
+
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script>
+
+			$("#navIcon-box").click(function(){
+				$("#navigation-div").show('slide', {
+					direction: 'left'
+				},
+				600,
+				'linear'
+			);
+			});
+
+			$("#close-btn").click(function(){
+				$("#navigation-div").hide('slide',{
+					diredtion: 'left'
+				},
+				600,
+				'linear'
+			)
+			});
+
+
+		</script>
+	</body>
+</html>
